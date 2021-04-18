@@ -165,6 +165,13 @@ section .lead {
 
 .share-section li {
   margin-left: 20px;
+  position: relative;
+  bottom: 0;
+  transition: all 50ms ease-in-out;
+}
+
+.share-section li:hover {
+  bottom: 5px;
 }
 
 .share-section::after {
