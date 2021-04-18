@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 
+/* variables */
+
 :root {
   --primary: hsl(217, 19%, 35%);
   --secondary: hsl(214, 17%, 51%);
@@ -9,6 +11,8 @@
   --btn: hsl(210, 17%, 51%);
   --share: hsl(220, 20%, 36%);
 }
+
+/* default styling */
 
 *,
 *::after,
@@ -28,6 +32,8 @@ body {
   align-items: center;
 }
 
+/* style card */
+
 main {
   max-height: 280px;
   max-width: 718px;
@@ -35,7 +41,6 @@ main {
   background-color: var(--white);
   border-radius: 10px;
   box-shadow: 5px 5px 100px -50px var(--box-shadow);
-  /* overflow: hidden; */
 }
 
 .drawer-image {
@@ -54,11 +59,13 @@ section {
 section h2 {
   color: var(--primary);
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 section .lead {
   color: var(--secondary);
   margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
 .user-details {
@@ -81,15 +88,19 @@ section .lead {
   width: 100%;
   border-radius: 50%;
 }
+
 .details {
   align-self: center;
 }
+
 .details h4 {
   color: var(--primary);
+  font-weight: 700;
 }
 
 .details p {
   color: var(--secondary);
+  font-weight: 500;
 }
 
 .btn {
@@ -120,6 +131,8 @@ section .lead {
 .share:active img {
   filter: brightness(500%);
 }
+
+/* style share section */
 
 .share-section {
   position: absolute;
@@ -166,9 +179,34 @@ section .lead {
   border-top: 10px solid var(--share);
 }
 
+/* style footer */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.75rem;
+  line-height: 20px;
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.attribution a:hover {
+  color: var(--share);
+}
+
+/* style tablet */
+
 @media only screen and (max-width: 925px) {
   body {
     font-size: 10px;
+    flex-direction: column;
   }
   main {
     max-height: 274px;
@@ -192,7 +230,14 @@ section .lead {
     bottom: -9px;
     left: 85%;
   }
+  .attribution {
+    position: relative;
+    margin-top: 20px;
+  }
 }
+
+/* style mobile */
+
 @media only screen and (max-width: 600px) {
   main {
     flex-direction: column;
