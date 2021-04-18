@@ -120,6 +120,7 @@ section .lead {
   justify-content: center;
   align-items: center;
   overflow: visible;
+  transition: all 200ms ease-in-out;
 }
 
 .share:hover,
@@ -167,7 +168,7 @@ section .lead {
   margin-left: 20px;
   position: relative;
   bottom: 0;
-  transition: all 50ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .share-section li:hover {
